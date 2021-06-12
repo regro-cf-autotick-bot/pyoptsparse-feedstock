@@ -12,7 +12,7 @@ source:
     - patch-IPOPT-setup-for-conda.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 
