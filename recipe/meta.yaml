@@ -31,7 +31,6 @@ requirements:
     - ipopt
     - libblas
     - liblapack
-    - ipopt
 
   run:
     - python
