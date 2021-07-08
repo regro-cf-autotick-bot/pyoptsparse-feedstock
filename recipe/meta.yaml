@@ -12,8 +12,9 @@ source:
     - patch-IPOPT-setup-for-conda.patch
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win]
+  skip: True  # [python_impl == 'pypy']
 
 
 requirements:
@@ -30,7 +31,6 @@ requirements:
     - ipopt
     - libblas
     - liblapack
-    - ipopt
 
   run:
     - python
