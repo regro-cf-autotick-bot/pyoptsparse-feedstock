@@ -1,20 +1,20 @@
 {% set name = "pyoptsparse" %}
-{% set version = "2.6.2" %}
+{% set version = "2.6.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://github.com/mdolab/pyoptsparse/archive/refs/tags/v{{ version }}.tar.gz"
-  sha256: 4f28eefa4eb5724f3d0a2b6118c45aedee24a7dea72a6672a49feb77220ecf32
+  url: https://github.com/mdolab/pyoptsparse/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 7fdcb7f54b276035880166ae2a0f7b51baa3ed46c7242b03cde904c7e4ad80d7
   patches:
     - patch-IPOPT-setup-for-conda.patch
 
 build:
-  number: 3
-  skip: True  # [win]
-  skip: True  # [python_impl == 'pypy']
+  number: 0
+  skip: true  # [win]
+  skip: true  # [python_impl == 'pypy']
 
 
 requirements:
@@ -61,7 +61,7 @@ about:
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
-  summary: 'Package for formulating and solving nonlinear constrained optimization problems.'
+  summary: Package for formulating and solving nonlinear constrained optimization problems.
   description: |
     pyOptSparse is an object-oriented framework for formulating and solving
     nonlinear constrained optimization problems in an efficient, reusable, and
