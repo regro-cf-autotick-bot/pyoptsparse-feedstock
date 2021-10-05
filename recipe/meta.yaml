@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/mdolab/pyoptsparse/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 7fdcb7f54b276035880166ae2a0f7b51baa3ed46c7242b03cde904c7e4ad80d7
-  patches:
-    - patch-IPOPT-setup-for-conda.patch
 
 build:
   number: 0
