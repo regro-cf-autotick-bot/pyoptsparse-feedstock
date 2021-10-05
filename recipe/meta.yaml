@@ -42,7 +42,7 @@ test:
     - pyoptsparse
 
   source_files:
-    - test
+    - tests
 
   requires:
     - pip
