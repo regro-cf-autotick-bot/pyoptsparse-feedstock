@@ -7,3 +7,9 @@ github:
   branch_name: main
   tooling_branch_name: main
 test_on_native_only: true
+azure:
+  settings_win:
+    variables:
+      SET_PAGEFILE: "True"
+provider:
+  win: azure
