@@ -1,5 +1,5 @@
 {% set name = "pyoptsparse" %}
-{% set version = "2.8.3" %}
+{% set version = "2.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jackm97/pyoptsparse/archive/meson-build.tar.gz
-  sha256: 777f7ddfbc6a51f895e5f174adb87785a507550af45b510248000fee305359a0
+  sha256: 8f0d42a38ab797315e6a65644a4ed539bc7cde2657d21c5762d4d8157fb7e29f
 
 build:
   number: 0
