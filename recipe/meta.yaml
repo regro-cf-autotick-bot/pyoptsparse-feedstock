@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/jackm97/pyoptsparse/archive/meson-build.tar.gz
-  sha256: 4ad482a402c60ed3e3b47131f3c8b909f73bc06cd610034baa378d8ffc25521f
+  url: https://github.com/mdolab/pyoptsparse/archive/main.tar.gz
+  sha256: cc92e7391ad9e8efb3e6de1b02d882c45d094628e0e3ca142f1879e8f86741e9
 
 build:
   number: 0
