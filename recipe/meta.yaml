@@ -24,7 +24,7 @@ requirements:
     - cross-python_{{ target_platform }}      # [build_platform != target_platform]
     - python
     - numpy
-    - meson >=0.60
+    - meson =0.61
     - build
     - pip
     - swig
