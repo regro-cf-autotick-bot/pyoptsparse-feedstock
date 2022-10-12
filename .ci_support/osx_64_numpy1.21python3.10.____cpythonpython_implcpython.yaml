@@ -17,7 +17,7 @@ fortran_compiler:
 fortran_compiler_version:
 - '11'
 ipopt:
-- 3.14.9
+- 3.14.10
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
