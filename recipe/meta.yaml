@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/mdolab/pyoptsparse/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 4ff093de9328005bb3ae9b2a5e729be64c6602695f6a39a02c7fbb38867131e6
-  patches:
-    - skip-nsga2-tests.patch
 
 build:
   number: 0
