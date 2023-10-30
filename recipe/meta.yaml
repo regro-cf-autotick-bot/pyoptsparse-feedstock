@@ -27,7 +27,7 @@ requirements:
     - python
     - numpy
     - meson                                   # [not win]
-    - meson=0.61                              # [win]
+    - meson =0.61                             # [win]
     - python-build
     - pip
     - swig
