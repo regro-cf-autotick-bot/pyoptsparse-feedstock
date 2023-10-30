@@ -15,7 +15,7 @@ build:
   number: 1
   skip: true  # [python_impl == 'pypy']
   skip: true  # [win and vc<14]
-  skip: true  # [win and py>=3.12]
+  skip: true  # [win and py>=312]
 
 
 
