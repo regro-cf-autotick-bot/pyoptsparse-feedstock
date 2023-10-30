@@ -26,7 +26,8 @@ requirements:
     - cross-python_{{ target_platform }}      # [build_platform != target_platform]
     - python
     - numpy
-    - meson
+    - meson                                   # [not win]
+    - meson=0.61                              # [win]
     - python-build
     - pip
     - swig
