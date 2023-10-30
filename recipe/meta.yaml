@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/mdolab/pyoptsparse/archive/refs/tags/v{{ version }}.tar.gz
   sha256: eadd88acf112be5704aa51f545f2f4364a40f3a43af62b46e3e4c9777f0475dd
+  patches:
+    - nsga2func-implicit.patch  # [osx]
 
 build:
   number: 1
