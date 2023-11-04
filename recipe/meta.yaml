@@ -8,11 +8,14 @@ package:
 source:
   url: https://github.com/mdolab/pyoptsparse/archive/refs/tags/v{{ version }}.tar.gz
   sha256: eadd88acf112be5704aa51f545f2f4364a40f3a43af62b46e3e4c9777f0475dd
+  patches:
+    - nsga2func-implicit.patch  # [osx]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [python_impl == 'pypy']
   skip: true  # [win and vc<14]
+  skip: true  # [win and py>=312]
 
 
 
@@ -24,7 +27,8 @@ requirements:
     - cross-python_{{ target_platform }}      # [build_platform != target_platform]
     - python
     - numpy
-    - meson =0.61
+    - meson                                   # [not win]
+    - meson =0.61                             # [win]
     - python-build
     - pip
     - swig
