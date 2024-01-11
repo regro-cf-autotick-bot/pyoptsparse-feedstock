@@ -13,7 +13,6 @@ build:
   number: 0
   skip: true  # [python_impl == 'pypy']
   skip: true  # [win and vc<14]
-  skip: true  # [win and py>=312]
 
 requirements:
   build:
@@ -23,8 +22,7 @@ requirements:
     - cross-python_{{ target_platform }}      # [build_platform != target_platform]
     - python
     - numpy
-    - meson                                   # [not win]
-    - meson =0.61                             # [win]
+    - meson >=1.3.1
     - python-build
     - pip
     - swig
