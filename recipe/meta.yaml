@@ -13,6 +13,7 @@ build:
   number: 0
   skip: true  # [python_impl == 'pypy']
   skip: true  # [win and vc<14]
+  skip: True # [py38]
 
 requirements:
   build:
@@ -36,7 +37,7 @@ requirements:
     - libpgmath                               # [win]
 
   run:
-    - python >=3.9
+    - python
     - {{ pin_compatible('numpy') }}
     - sqlitedict >=1.6
     - scipy >1.2
