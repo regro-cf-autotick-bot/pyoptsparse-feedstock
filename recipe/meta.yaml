@@ -36,7 +36,7 @@ requirements:
     - libpgmath                               # [win]
 
   run:
-    - python
+    - python >=3.9
     - {{ pin_compatible('numpy') }}
     - sqlitedict >=1.6
     - scipy >1.2
