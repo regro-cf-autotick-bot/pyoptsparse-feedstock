@@ -57,7 +57,7 @@ test:
     - setuptools
 
   commands:
-    - testflo -n 1 --verbose .
+    - testflo -n 1 --pre_announce --verbose .
     - pip check
 
 about:
